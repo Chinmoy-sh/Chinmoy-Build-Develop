@@ -185,7 +185,7 @@ self.addEventListener('message', (event) => {
     }
 });
 
-// // Message handling
+// Message handling
 // self.addEventListener('message', (event) => {
 //     if (event.data && event.data.type === 'SKIP_WAITING') {
 //         self.skipWaiting();
