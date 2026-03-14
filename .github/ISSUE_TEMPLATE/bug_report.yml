@@ -1,0 +1,49 @@
+name: Bug report
+description: Report a reproducible issue
+labels: [bug]
+body:
+    - type: markdown
+      attributes:
+          value: |
+              Thanks for helping improve this project.
+
+    - type: input
+      id: summary
+      attributes:
+          label: Summary
+          description: One-line description of the bug.
+          placeholder: Navbar menu does not close on mobile
+      validations:
+          required: true
+
+    - type: textarea
+      id: steps
+      attributes:
+          label: Steps to reproduce
+          description: List exact steps.
+          placeholder: |
+              1. Open site on mobile viewport
+              2. Click menu button
+              3. Click About link
+      validations:
+          required: true
+
+    - type: textarea
+      id: expected
+      attributes:
+          label: Expected behavior
+      validations:
+          required: true
+
+    - type: textarea
+      id: actual
+      attributes:
+          label: Actual behavior
+      validations:
+          required: true
+
+    - type: textarea
+      id: environment
+      attributes:
+          label: Environment
+          description: Browser, OS, and device details.

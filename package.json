@@ -1,0 +1,25 @@
+{
+    "name": "chinmoy-build-develop",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Professional portfolio website for Chinmoy Kumar Biswas.",
+    "scripts": {
+        "start": "serve . -l 4173",
+        "lint:html": "htmlhint index.html",
+        "lint:css": "stylelint style.css",
+        "lint:js": "eslint script.js",
+        "lint": "npm run lint:html && npm run lint:css && npm run lint:js",
+        "format": "prettier --write .",
+        "format:check": "prettier --check ."
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.23.0",
+        "eslint": "^9.23.0",
+        "globals": "^16.0.0",
+        "htmlhint": "^1.7.1",
+        "prettier": "^3.6.2",
+        "serve": "^14.2.4",
+        "stylelint": "^16.16.0",
+        "stylelint-config-standard": "^38.0.0"
+    }
+}
