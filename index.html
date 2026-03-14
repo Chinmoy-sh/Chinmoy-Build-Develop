@@ -1,970 +1,1111 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-
-<html lang="en">
 <html lang="en">
 
 <head>
-
-    <!-- Meta Tags -->
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <meta name="description"
-            content="Chinmoy Kumar Biswas - Professional Full-Stack Developer specializing in modern web development, responsive design, and user experience.">
-        <title>Chinmoy Kumar Biswas — Portfolio</title>
-
-        <meta name="keywords"
-            content="full-stack developer, web development, javascript, react, node.js, portfolio, chinmoy kumar biswas">
-        <meta name="description" content="Professional portfolio of Chinmoy Kumar Biswas — Full-Stack Developer." />
-
-        <meta name="author" content="Chinmoy Kumar Biswas">
-        <meta name="keywords" <meta name="robots" content="index, follow"> content="Full Stack Developer, Software
-        Engineer, Web Development, JavaScript, React, Node.js, Portfolio" />
-
-        <meta name="author" content="Chinmoy Kumar Biswas" />
-
-        <!-- Open Graph / Facebook -->
-        <meta name="robots" content="index, follow" />
-
-        <meta property="og:type" content="website">
-        <link rel="canonical" href="https://chinmoy-kumar-biswas.github.io/" />
-
-        <meta property="og:url" content="https://chinmoy-kumar-biswas.github.io/">
-
-        <meta property="og:title" content="Chinmoy Kumar Biswas - Full-Stack Developer"> <!-- Open Graph / Twitter -->
-
-        <meta property="og:description"
-            content="Professional portfolio showcasing modern web development projects and expertise in full-stack development.">
-        <meta property="og:type" content="website" />
-
-        <meta property="og:image" content="https://chinmoy-kumar-biswas.github.io/images/chinmoy.png">
-        <meta property="og:url" content="https://chinmoy-kumar-biswas.github.io/" />
-
-        <meta property="og:title" content="Chinmoy Kumar Biswas - Full-Stack Developer" />
-
-        <!-- Twitter -->
-        <meta property="og:description" <meta property="twitter:card" content="summary_large_image">
-        content="Professional portfolio showcasing cutting-edge web development projects and software engineering
-        expertise." />
-
-        <meta property="twitter:url" content="https://chinmoy-kumar-biswas.github.io/">
-        <meta property="og:image" content="https://chinmoy-kumar-biswas.github.io/images/chinmoy.png" />
-
-        <meta property="twitter:title" content="Chinmoy Kumar Biswas - Full-Stack Developer">
-        <meta property="og:image:alt" content="Chinmoy Kumar Biswas - Professional Developer" />
-
-        <meta property="twitter:description"
-            content="Professional portfolio showcasing modern web development projects and expertise in full-stack development.">
-        <meta name="twitter:card" content="summary_large_image" />
-
-        <meta property="twitter:image" content="https://chinmoy-kumar-biswas.github.io/images/chinmoy.png">
-        <meta name="twitter:url" content="https://chinmoy-kumar-biswas.github.io/" />
-
-        <meta name="twitter:title" content="Chinmoy Kumar Biswas - Full-Stack Developer" />
-
-        <!-- Title -->
-        <meta name="twitter:description" <title>Chinmoy Kumar Biswas - Full-Stack Developer</title>
-        content="Professional portfolio showcasing cutting-edge web development projects and software engineering
-        expertise." />
-
-        <meta name="twitter:image" content="https://chinmoy-kumar-biswas.github.io/images/chinmoy.png" />
-
-        <!-- Favicon -->
-
-        <link rel="icon" type="image/x-icon" href="/favicon.ico"> <!-- Theme and PWA -->
-
-        <meta name="theme-color" content="#0f0f23" />
-
-        <!-- Theme Color -->
-        <meta name="color-scheme" content="dark light" />
-
-        <meta name="theme-color" content="#0066cc">
-        <link rel="manifest" href="./manifest.json" />
-
-        <meta name="color-scheme" content="light dark">
-
-        <!-- Icons -->
-
-        <!-- Preload Critical Resources -->
-        <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-
-        <link rel="preload" href="./assets/css/reset.css" as="style">
-        <link rel="apple-touch-icon" href="./images/chinmoy.png" />
-
-        <link rel="preload" href="./assets/css/variables.css" as="style">
-
-        <link rel="preload" href="./assets/css/base.css" as="style"> <!-- Fonts -->
-
-        <link rel="preload" href="./images/chinmoy.png" as="image">
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-        <!-- CSS -->
-        <link rel="preload" as="image" href="./images/chinmoy.png" />
-
-        <link rel="stylesheet" href="./assets/css/reset.css">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" <link
-            rel="stylesheet" href="./assets/css/variables.css"> rel="stylesheet" />
-
-        <link rel="stylesheet" href="./assets/css/base.css">
-
-        <link rel="stylesheet" href="./assets/css/components.css"> <!-- CSS -->
-
-        <link rel="stylesheet" href="./assets/css/layouts.css">
-        <link rel="stylesheet" href="./assets/css/variables.css" />
-
-        <link rel="stylesheet" href="./assets/css/animations.css">
-        <link rel="stylesheet" href="./assets/css/base.css" />
-
-        <link rel="stylesheet" href="./assets/css/layout.css" />
-
-        <!-- Fonts -->
-        <link rel="stylesheet" href="./assets/css/components.css" />
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="stylesheet" href="./assets/css/animations.css" />
-
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    </head>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
-        rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHINMOY KUMAR BISWAS - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Three.js CDN for 3D visualizations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 
-<body>
-
-    <body> <a class="skip-link" href="#main">Skip to content</a>
-
-        <!-- Skip Link for Accessibility --> <noscript>
-
-            <a href="#main-content" class="skip-link">Skip to main content</a>
-            <div class="container" style="padding:12px 0;color:#ffdddd;">
-
-                JavaScript is disabled. Some features may not work as expected.
-
-                <!-- Loading Screen -->
-            </div>
-
-            <div class="loading-screen" id="loading-screen">
-        </noscript>
-
-        <div class="loading-content">
-
-            <div class="loading-logo">
-                <header class="site-header">
-
-                    <span>CKB</span>
-                    <div class="container header-inner">
-
-                    </div> <a class="brand" href="#home">CKB</a>
-
-                    <div class="loading-progress">
-                        <nav class="site-nav" aria-label="Primary">
-
-                            <div class="loading-bar"></div>
-                            <ul class="nav-links" id="nav-links">
-
-                    </div>
-                    <li><a href="#home" class="nav-link">Home</a></li>
-
-                    <p class="loading-text">Loading Portfolio...</p>
-                    <li><a href="#about" class="nav-link">About</a></li>
-
-            </div>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
-
-        </div>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-
-        <!-- Navigation Header -->
-        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
-
-        <header class="header" id="header">
-            <li><a href="#community" class="nav-link">Community</a></li>
-
-            <nav class="navbar container" role="navigation" aria-label="Main navigation">
-                <li><a href="#resources" class="nav-link">Resources</a></li>
-
-                <div class="nav-brand">
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-
-                    <a href="#home" class="brand-link" aria-label="Chinmoy Kumar Biswas - Go to home"> </ul>
-
-                        <span class="brand-text">CKB</span>
-            </nav>
-
-            </a> <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme">
-
-                </div> <span class="theme-icon" aria-hidden="true">🌗</span>
-
-            </button>
-
-            <ul class="nav-menu" id="nav-menu" role="menubar">
-                </div>
-
-                <li class="nav-item" role="none">
-        </header>
-
-        <a href="#home" class="nav-link active" role="menuitem" data-nav="home">
-
-            <span class="nav-text">Home</span>
-            <main id="main">
-
-        </a> <!-- Home -->
-
-        </li>
-        <section id="home" class="section hero">
-
-            <li class="nav-item" role="none">
-                <div class="hero-background" aria-hidden="true"></div>
-
-                <a href="#about" class="nav-link" role="menuitem" data-nav="about">
-                    <div class="container grid-2">
-
-                        <span class="nav-text">About</span>
-                        <div>
-
-                </a>
-                <h1 class="headline reveal-up">Chinmoy Kumar Biswas</h1>
-
-            </li>
-            <p class="subhead typing-effect reveal-up delay-1">Full-Stack Developer crafting fast, reliable, and
-
-                <li class="nav-item" role="none"> delightful
-
-                    <a href="#skills" class="nav-link" role="menuitem" data-nav="skills"> experiences.
-            </p>
-
-            <span class="nav-text">Skills</span>
-            <div class="actions reveal-up delay-2">
-
-                </a> <a href="#projects" class="btn btn-primary">View Projects</a>
-
-                </li> <a href="#contact" class="btn btn-outline">Contact</a>
-
-                <li class="nav-item" role="none">
-            </div>
-
-            <a href="#projects" class="nav-link" role="menuitem" data-nav="projects"> </div>
-
-                <span class="nav-text">Projects</span>
-                <div class="hero-visual reveal-fade delay-2">
-
-            </a> <img src="./images/chinmoy.png" alt="Chinmoy Kumar Biswas" class="hero-photo" width="320" </li>
-            height="320" decoding="async" />
-
-            <li class="nav-item" role="none">
-                </div>
-
-                <a href="#experience" class="nav-link" role="menuitem" data-nav="experience"> </div>
-
-                    <span class="nav-text">Experience</span>
-                    <div class="scroll-indicator">
-
-                </a> <a class="scroll-arrow" href="#about" aria-label="Scroll to About">↓</a>
-
-            </li>
-            </div>
-
-            <li class="nav-item" role="none">
-        </section>
-
-        <a href="#references" class="nav-link" role="menuitem" data-nav="references">
-
-            <span class="nav-text">References</span> <!-- About -->
-
-        </a>
-        <section id="about" class="section">
-
-            </li>
-            <div class="container">
-
-                <li class="nav-item" role="none">
-                    <header class="section-header reveal-up">
-
-                        <a href="#community" class="nav-link" role="menuitem" data-nav="community">
-                            <h2>About</h2>
-
-                            <span class="nav-text">Community</span>
-                            <p>Driven by impact. Focused on quality.</p>
-
-                        </a>
-                    </header>
-
-                </li>
-                <div class="grid-2">
-
-                    <li class="nav-item" role="none">
-                        <div class="card reveal-up">
-
-                            <a href="#resources" class="nav-link" role="menuitem" data-nav="resources">
-                                <h3>Summary</h3>
-
-                                <span class="nav-text">Resources</span>
-                                <p>
-
-                            </a> I build scalable web apps with clean architecture and a strong focus on performance,
-
-                    </li> accessibility, and robust user experience.
-
-                    <li class="nav-item" role="none">
-                        </p>
-
-                        <a href="#contact" class="nav-link" role="menuitem" data-nav="contact">
-                </div>
-
-                <span class="nav-text">Contact</span>
-                <div class="card reveal-up delay-1">
-
-                    </a>
-                    <h3>Highlights</h3>
-
-                    </li>
-                    <ul class="list">
-
-                    </ul>
-                    <li>Modern JS, TypeScript, Node.js</li>
-
-                    <li>UI engineering with semantic, accessible HTML/CSS</li>
-
-                    <div class="nav-actions">
-                        <li>System design and performance optimization</li>
-
-                        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme"
-                            aria-pressed="false"> </ul>
-
-                            <span class="theme-icon sun-icon">☀️</span>
-                    </div>
-
-                    <span class="theme-icon moon-icon">🌙</span>
-                </div>
-
+<body class="antialiased">
+
+    <!-- Loading Spinner -->
+    <div id="loading-spinner"
+        class="fixed inset-0 bg-gray-950 flex items-center justify-center z-[9999] transition-opacity duration-500 opacity-100">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-900 shadow-xl fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Profile Name/Logo on Left -->
+            <a href="#hero"
+                class="text-2xl font-bold text-indigo-400 hover:text-indigo-300 rounded-md p-2 transition duration-300 ease-in-out">CHINMOY
+                KUMAR BISWAS</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#about"
+                    class="text-gray-300 hover:text-indigo-400 font-medium transition duration-300 ease-in-out rounded-md p-2">About</a>
+                <a href="#services"
+                    class="text-gray-300 hover:text-indigo-400 font-medium transition duration-300 ease-in-out rounded-md p-2">Services</a>
+                <a href="#skills"
+                    class="text-gray-300 hover:text-indigo-400 font-medium transition duration-300 ease-in-out rounded-md p-2">Skills</a>
+                <a href="#experience"
+                    class="text-gray-300 hover:text-indigo-400 font-medium transition duration-300 ease-in-out rounded-md p-2">Experience</a>
+                <a href="#education"
+                    class="text-gray-300 hover:text-indigo-400 font-medium transition duration-300 ease-in-out rounded-md p-2">Education</a>
+                <a href="#certifications"
+                    class="text-gray-300 hover:text-indigo-400 font-medium transition duration-300 ease-in-out rounded-md p-2">Certifications</a>
+                <a href="#blog"
+                    class="text-gray-300 hover:text-indigo-400 font-medium transition duration-300 ease-in-out rounded-md p-2">Blog</a>
+                <a href="#notes"
+                    class="text-gray-300 hover:text-indigo-400 font-medium transition duration-300 ease-in-out rounded-md p-2">Notes</a>
+                <a href="#projects"
+                    class="text-gray-300 hover:text-indigo-400 font-medium transition duration-300 ease-in-out rounded-md p-2">Projects</a>
+                <a href="#3d-showcase"
+                    class="text-gray-300 hover:text-indigo-400 font-medium transition duration-300 ease-in-out rounded-md p-2">3D
+                    Showcase</a>
+                <a href="#testimonials"
+                    class="text-gray-300 hover:text-indigo-400 font-medium transition duration-300 ease-in-out rounded-md p-2">Testimonials</a>
+                <a href="#contact"
+                    class="text-gray-300 hover:text-indigo-400 font-medium transition duration-300 ease-in-out rounded-md p-2">Contact</a>
+                <!-- New: Dark/Light Mode Toggle -->
+                <button id="theme-toggle"
+                    class="ml-4 p-2 rounded-full bg-gray-700 text-yellow-300 hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-300 ease-in-out">
+                    <i class="fas fa-sun text-xl" id="theme-icon"></i>
                 </button>
             </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-indigo-400 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 py-2 shadow-inner">
+            <a href="#about"
+                class="block px-6 py-2 text-gray-300 hover:bg-gray-700 hover:text-indigo-400 font-medium transition duration-300 ease-in-out">About</a>
+            <a href="#services"
+                class="block px-6 py-2 text-gray-300 hover:bg-gray-700 hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Services</a>
+            <a href="#skills"
+                class="block px-6 py-2 text-gray-300 hover:bg-gray-700 hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Skills</a>
+            <a href="#experience"
+                class="block px-6 py-2 text-gray-300 hover:bg-gray-700 hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Experience</a>
+            <a href="#education"
+                class="block px-6 py-2 text-gray-300 hover:bg-gray-700 hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Education</a>
+            <a href="#certifications"
+                class="block px-6 py-2 text-gray-300 hover:bg-gray-700 hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Certifications</a>
+            <a href="#blog"
+                class="block px-6 py-2 text-gray-300 hover:bg-gray-700 hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Blog</a>
+            <a href="#notes"
+                class="block px-6 py-2 text-gray-300 hover:bg-gray-700 hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Notes</a>
+            <a href="#projects"
+                class="block px-6 py-2 text-gray-300 hover:bg-gray-700 hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Projects</a>
+            <a href="#3d-showcase"
+                class="block px-6 py-2 text-gray-300 hover:bg-gray-700 hover:text-indigo-400 font-medium transition duration-300 ease-in-out">3D
+                Showcase</a>
+            <a href="#testimonials"
+                class="block px-6 py-2 text-gray-300 hover:bg-gray-700 hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Testimonials</a>
+            <a href="#contact"
+                class="block px-6 py-2 text-gray-300 hover:bg-gray-700 hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Contact</a>
+            <!-- New: Dark/Light Mode Toggle for Mobile -->
+            <button id="mobile-theme-toggle"
+                class="w-full text-left px-6 py-2 text-gray-300 hover:bg-gray-700 hover:text-indigo-400 font-medium transition duration-300 ease-in-out">
+                <i class="fas fa-sun mr-2" id="mobile-theme-icon"></i> Toggle Theme
+            </button>
+        </div>
+    </nav>
 
-        </section>
+    <!-- Hero Section -->
+    <section id="hero" class="relative h-screen flex items-center bg-gray-950 text-white overflow-hidden">
+        <!-- Abstract background pattern using SVG -->
+        <div class="absolute inset-0 z-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                    <pattern id="pattern-circles" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse"
+                        patternContentUnits="userSpaceOnUse">
+                        <circle cx="2" cy="2" r="2" fill="#374151"></circle>
+                    </pattern>
+                    <pattern id="pattern-lines" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"
+                        patternContentUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                        <line x1="0" y1="0" x2="0" y2="20" stroke="#374151" stroke-width="0.5"></line>
+                    </pattern>
+                </defs>
+                <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-circles)"></rect>
+                <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-lines)" opacity="0.5"></rect>
+            </svg>
+        </div>
+        <!-- Animated Particles Overlay (CSS generated) -->
+        <div class="absolute inset-0 z-0 particles-container"></div>
 
-        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false"
-            aria-controls="nav-menu">
+        <div
+            class="relative z-10 p-6 bg-gray-900 bg-opacity-50 rounded-xl shadow-2xl backdrop-blur-sm max-w-2xl mx-auto md:mx-0 md:ml-20 animate-fade-in text-left">
+            <img src="images/chinmoy.png" alt="Your Photo"
+                class="w-36 h-36 rounded-full mb-6 border-4 border-indigo-400 shadow-lg object-cover animate-rotate-in mx-auto md:mx-0">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">Hi, I'm <span
+                    class="text-yellow-300">CHINMOY KUMAR BISWAS</span></h1>
+            <p class="text-xl md:text-2xl font-light mb-8">A passionate <span
+                    class="font-semibold text-indigo-200">Programmer</span> building amazing things.</p>
+            <a href="#projects"
+                class="inline-block bg-yellow-400 text-gray-900 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-yellow-300 transform hover:scale-105 transition duration-300 ease-in-out">View
+                My Work <i class="fas fa-arrow-right ml-2"></i></a>
+        </div>
+    </section>
 
-            <span class="hamburger"></span> <!-- Skills -->
-
-            <span class="hamburger"></span>
-            <section id="skills" class="section">
-
-                <span class="hamburger"></span>
-                <div class="container">
-
-        </button>
-        <header class="section-header reveal-up">
-
-            </div>
-            <h2>Skills & Technologies</h2>
-
-            </nav>
-            <p>Versatile across the stack.</p>
-
-        </header>
-        </header>
-
-        <div class="grid-3" id="skills-grid">
-
-            <!-- Main Content --> <!-- sample cards -->
-
-            <main id="main-content" role="main">
-                <article class="card skill-card reveal-up">
-
-                    <h3>Frontend</h3>
-
-                    <!-- Home Section -->
-                    <p>HTML, CSS, JS, React</p>
-
-                    <section id="home" class="section hero-section" data-section="home">
-                </article>
-
-                <div class="container">
-                    <article class="card skill-card reveal-up delay-1">
-
-                        <div class="hero-content">
-                            <h3>Backend</h3>
-
-                            <div class="hero-text">
-                                <p>Node.js, Express, REST</p>
-
-                                <h1 class="hero-title fade-in-up">
-                    </article>
-
-                    <span class="greeting">Hello, I'm</span>
-                    <article class="card skill-card reveal-up delay-2">
-
-                        <span class="name">Chinmoy Kumar Biswas</span>
-                        <h3>Tools</h3>
-
-                        <span class="role typing-animation">Full-Stack Developer</span>
-                        <p>Git, CI/CD, Testing</p>
-
-                        </h1>
-                    </article>
-
-                    <p class="hero-description fade-in-up delay-200">
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-gray-900 section-bg-pattern-1">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="section-title text-center mx-auto animate-fade-in">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center md:space-x-12 mt-10">
+                <div class="md:w-1/2 mb-8 md:mb-0 animate-slide-left">
+                    <img src="images/chinmoy.png" alt="About Me"
+                        class="rounded-xl shadow-lg transform hover:scale-105 transition duration-300 ease-in-out object-cover w-full h-auto">
                 </div>
-
-                Crafting exceptional digital experiences with modern web technologies.
-        </div>
-
-        Passionate about clean code, user-centric design, and performance optimization. </section>
-
-        </p>
-
-        <div class="hero-actions fade-in-up delay-400"> <!-- Projects -->
-
-            <a href="#projects" class="btn btn-primary">View My Work</a>
-            <section id="projects" class="section">
-
-                <a href="#contact" class="btn btn-outline">Get In Touch</a>
-                <div class="container">
-
-                </div>
-                <header class="section-header reveal-up">
-
-                    <div class="hero-stats fade-in-up delay-600">
-                        <h2>Projects</h2>
-
-                        <div class="stat-item">
-                            <p>Selected work demonstrating execution and polish.</p>
-
-                            <span class="stat-number" data-count="50">0</span>
-                </header>
-
-                <span class="stat-label">Projects Completed</span>
-                <div class="grid-3" id="projects-grid">
-
-                </div>
-                <article class="card project-card reveal-fade">
-
-                    <div class="stat-item">
-                        <div class="media">
-
-                            <span class="stat-number" data-count="5">0</span> <img src="./images/pro3.jpg"
-                                alt="Project preview" loading="lazy" width="1280" height="800" <span
-                                class="stat-label">Years Experience</span> decoding="async" />
-
-                        </div>
-                    </div>
-
-                    <div class="stat-item">
-                        <div class="card-body">
-
-                            <span class="stat-number" data-count="25">0</span>
-                            <h3>Featured Project</h3>
-
-                            <span class="stat-label">Happy Clients</span>
-                            <p>Responsive, accessible, fast.</p>
-
-                        </div>
-                    </div>
-
-        </div>
-        </article>
-
-        </div> <!-- more project cards later via data -->
-
-        <div class="hero-visual fade-in-up delay-300"> </div>
-
-        <div class="hero-image-container"> </div>
-
-        <img src="./images/chinmoy.png" alt="Chinmoy Kumar Biswas" class="hero-image" loading="eager"> </section>
-
-        <div class="image-decoration"></div>
-
-        </div> <!-- Experience -->
-
-        <div class="floating-elements">
-            <section id="experience" class="section">
-
-                <div class="float-element" data-float="1">💻</div>
-                <div class="container">
-
-                    <div class="float-element" data-float="2">🚀</div>
-                    <header class="section-header reveal-up">
-
-                        <div class="float-element" data-float="3">⚡</div>
-                        <h2>Experience</h2>
-
-                        <div class="float-element" data-float="4">🎨</div>
-                        <p>Impact delivered across roles and teams.</p>
-
-                </div>
-                </header>
-
-        </div>
-        <div class="timeline" id="experience-timeline">
-
-        </div> <!-- timeline items -->
-
-        <div class="scroll-indicator"> </div>
-
-        <a href="#about" class="scroll-down" aria-label="Scroll to about section"> </div>
-
-            <span></span> </section>
-
-            <span></span>
-
-            <span></span> <!-- References -->
-
-        </a>
-        <section id="references" class="section">
-
-            </div>
-            <div class="container">
-
-            </div>
-            <header class="section-header reveal-up">
-
-                <div class="hero-bg-animation">
-                    <h2>References</h2>
-
-                    <div class="bg-shape shape-1"></div>
-                    <p>What collaborators say.</p>
-
-                    <div class="bg-shape shape-2"></div>
-            </header>
-
-            <div class="bg-shape shape-3"></div>
-            <div class="grid-3" id="references-grid"></div>
-
-            </div>
-            </div>
-
-        </section>
-        </section>
-
-
-
-        <!-- About Section --> <!-- Community -->
-
-        <section id="about" class="section about-section" data-section="about">
-            <section id="community" class="section">
-
-                <div class="container">
-                    <div class="container">
-
-                        <div class="section-header">
-                            <header class="section-header reveal-up">
-
-                                <h2 class="section-title fade-in-up">About Me</h2>
-                                <h2>Community</h2>
-
-                                <p class="section-subtitle fade-in-up delay-100">Get to know me better</p>
-                                <p>Open-source and knowledge sharing.</p>
-
-                        </div>
-                        </header>
-
-                        <div class="about-content">
-                            <div class="grid-3" id="community-grid"></div>
-
-                            <div class="about-text fade-in-left"> </div>
-
-                            <div class="about-intro">
-            </section>
-
-            <h3>Passionate Developer & Problem Solver</h3>
-
-            <p> <!-- Resources -->
-
-                With over 5 years of experience in full-stack development, I specialize in creating
-            <section id="resources" class="section">
-
-                robust, scalable, and user-friendly web applications. My journey in technology has <div
-                    class="container">
-
-                    been driven by curiosity and a constant desire to learn and adapt to new challenges. <header
-                        class="section-header reveal-up">
-
-                        </p>
-                        <h2>Resources</h2>
-
-                </div>
-                <p>Guides, talks, and helpful links.</p>
-
-                <div class="about-highlights">
-                    </header>
-
-                    <h4>What I Bring to the Table:</h4>
-                    <div class="grid-3" id="resources-grid"></div>
-
-                    <ul class="highlights-list">
-                </div>
-
-                <li>🚀 Modern web development with latest technologies</li>
-            </section>
-
-            <li>💡 Creative problem-solving and innovative solutions</li>
-
-            <li>🎯 Focus on user experience and performance optimization</li> <!-- Contact -->
-
-            <li>🤝 Strong collaboration and communication skills</li>
-            <section id="contact" class="section">
-
-                <li>📚 Continuous learning and professional development</li>
-                <div class="container">
-
-                    </ul>
-                    <header class="section-header reveal-up">
-
-                </div>
-                <h2>Contact</h2>
-
-                <div class="about-personal">
-                    <p>Let’s build something great.</p>
-
-                    <h4>Beyond Code:</h4>
-                    </header>
-
-                    <p>
-                    <form class="card form reveal-up" id="contact-form" novalidate>
-
-                        When I'm not coding, you'll find me exploring new technologies, contributing to <div
-                            class="grid-2">
-
-                            open-source projects, or sharing knowledge through mentoring and technical writing. <label
-                                class="form-field">
-
-                                I believe in giving back to the community that has helped shape my career.
-                                <span>Name</span>
-
-                                </p> <input type="text" name="name" required />
-
-                        </div> </label>
-
-                </div> <label class="form-field">
-
-                    <div class="about-visual fade-in-right"> <span>Email</span>
-
-                        <div class="about-image-container"> <input type="email" name="email" required />
-
-                            <img src="./images/chinmoy.png" alt="Chinmoy Kumar Biswas" class="about-image"
-                                loading="lazy">
-                </label>
-
-                <div class="image-frame"></div>
-                </div>
-
-                </div> <label class="form-field">
-
-                    <div class="about-cards"> <span>Message</span>
-
-                        <div class="info-card"> <textarea name="message" rows="5" required></textarea>
-
-                            <div class="card-icon">📍</div>
-                </label>
-
-                <div class="card-content"> <button class="btn btn-primary" type="submit">Send</button>
-
-                    <h5>Location</h5>
-                    </form>
-
-                    <p>Available Worldwide</p>
-                </div>
-
-                </div>
-            </section>
-
-            </div>
-            </main>
-
-            <div class="info-card">
-
-                <div class="card-icon">💼</div>
-                <footer class="site-footer">
-
-                    <div class="card-content">
-                        <div class="container footer-inner">
-
-                            <h5>Work Status</h5>
-                            <p>© <span id="year"></span> Chinmoy Kumar Biswas</p>
-
-                            <p>Open to Opportunities</p>
-                            <div class="footer-links">
-
-                            </div> <a href="#home">Top</a>
-
-                        </div>
-                    </div>
-
-                    <div class="info-card"> </div>
-
-                    <div class="card-icon">🎓</div>
-                </footer>
-
-                <div class="card-content">
-
-                    <h5>Education</h5>
-                    <script src="./assets/js/main.js" defer></script>
-
-                    <p>Computer Science</p>
-    </body>
-
-    </div>
-
-    </div>
-
-</html>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<!-- Skills Section -->
-<section id="skills" class="section skills-section" data-section="skills">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title fade-in-up">Skills & Technologies</h2>
-            <p class="section-subtitle fade-in-up delay-100">My technical expertise and tools</p>
-        </div>
-        <div class="skills-content">
-            <div class="skills-grid" id="skills-grid">
-                <!-- Skills will be loaded dynamically -->
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Projects Section -->
-<section id="projects" class="section projects-section" data-section="projects">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title fade-in-up">Featured Projects</h2>
-            <p class="section-subtitle fade-in-up delay-100">Showcasing my best work and achievements</p>
-        </div>
-        <div class="projects-content">
-            <div class="projects-filters" id="projects-filters">
-                <button class="filter-btn active" data-filter="all">All Projects</button>
-                <button class="filter-btn" data-filter="web">Web Applications</button>
-                <button class="filter-btn" data-filter="mobile">Mobile</button>
-                <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
-                <button class="filter-btn" data-filter="frontend">Frontend</button>
-            </div>
-            <div class="projects-grid" id="projects-grid">
-                <!-- Projects will be loaded dynamically -->
-            </div>
-            <div class="projects-cta">
-                <a href="#contact" class="btn btn-primary">Let's Work Together</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Experience Section -->
-<section id="experience" class="section experience-section" data-section="experience">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title fade-in-up">Professional Experience</h2>
-            <p class="section-subtitle fade-in-up delay-100">My journey in the tech industry</p>
-        </div>
-        <div class="experience-content">
-            <div class="timeline" id="experience-timeline">
-                <!-- Experience will be loaded dynamically -->
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Testimonials Section -->
-<section id="testimonials" class="section" data-section="testimonials">
-    <div class="container">
-        <div class="section-header animate-on-scroll">
-            <h2 class="section-title">What Clients Say</h2>
-            <p class="section-subtitle">Testimonials and recommendations</p>
-        </div>
-        <div class="testimonials-container animate-on-scroll">
-            <!-- Testimonials will be loaded dynamically -->
-        </div>
-    </div>
-</section>
-
-<!-- Community Section -->
-<section id="community" class="section community-section" data-section="community">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title fade-in-up">Community & Contributions</h2>
-            <p class="section-subtitle fade-in-up delay-100">How I give back to the developer community</p>
-        </div>
-        <div class="community-content">
-            <div class="community-grid" id="community-grid">
-                <!-- Community activities will be loaded dynamically -->
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Resources Section -->
-<section id="resources" class="section resources-section" data-section="resources">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title fade-in-up">Resources & Learning</h2>
-            <p class="section-subtitle fade-in-up delay-100">Tools, articles, and resources I recommend</p>
-        </div>
-        <div class="resources-content">
-            <div class="resources-grid" id="resources-grid">
-                <!-- Resources will be loaded dynamically -->
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="section contact-section" data-section="contact">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title fade-in-up">Get In Touch</h2>
-            <p class="section-subtitle fade-in-up delay-100">Let's collaborate and create something amazing</p>
-        </div>
-        <div class="contact-content">
-            <div class="contact-info fade-in-left">
-                <div class="contact-card">
-                    <div class="card-icon">📧</div>
-                    <div class="card-content">
-                        <h4>Email</h4>
-                        <p>chinmoy.biswas@example.com</p>
-                    </div>
-                </div>
-                <div class="contact-card">
-                    <div class="card-icon">💼</div>
-                    <div class="card-content">
-                        <h4>LinkedIn</h4>
-                        <p>linkedin.com/in/chinmoy-kumar-biswas</p>
-                    </div>
-                </div>
-                <div class="contact-card">
-                    <div class="card-icon">🐙</div>
-                    <div class="card-content">
-                        <h4>GitHub</h4>
-                        <p>github.com/chinmoy-sh</p>
-                    </div>
-                </div>
-                <div class="contact-social">
-                    <h4>Follow Me</h4>
-                    <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Twitter">
-                            <span>🐦</span>
-                        </a>
-                        <a href="#" class="social-link" aria-label="LinkedIn">
-                            <span>💼</span>
-                        </a>
-                        <a href="#" class="social-link" aria-label="GitHub">
-                            <span>🐙</span>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Dev.to">
-                            <span>📝</span>
+                <div class="md:w-1/2 text-lg text-gray-300 leading-relaxed animate-slide-right">
+                    <p class="mb-4">Hello! I'm <span class="font-semibold text-indigo-400">CHINMOY KUMAR BISWAS</span>,
+                        a Programmer with a strong passion for cultivating new ideas and building new things. I thrive
+                        on
+                        solving complex problems and creating intuitive, efficient, and beautiful solutions.</p>
+                    <p class="mb-4">My journey in Programming began 2 years ago when I discovered the power of code, the
+                        intricacies of design and the impact of data. Since then, I've
+                        been dedicated to continuous learning and honing my skills.</p>
+                    <p class="mb-6">When I'm not coding or designing, you can find me exploring new
+                        technologies, reading sci-fi novels. I believe in a balanced approach to life and work,
+                        which fuels my creativity and problem-solving abilities.</p>
+                    <div class="text-center md:text-left">
+                        <a href="your-resume.pdf" download="CHINMOY_KUMAR_BISWAS_Resume.pdf"
+                            class="inline-block bg-indigo-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-700 transform hover:scale-105 transition duration-300 ease-in-out text-lg">
+                            Download Resume <i class="fas fa-download ml-2"></i>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="contact-form fade-in-right">
-                <form class="form" id="contact-form" novalidate>
-                    <div class="form-group">
-                        <label for="name" class="form-label">Name *</label>
-                        <input type="text" id="name" name="name" class="form-input" required aria-required="true">
-                        <span class="form-error" id="name-error"></span>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-800 section-bg-pattern-2">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="section-title text-center mx-auto animate-fade-in">What I Do</h2>
+            <p class="text-center text-gray-300 text-xl mb-12 animate-fade-in" data-delay="100">I offer a range of
+                services to help bring your digital ideas to life.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
+                <!-- Service Card 1 -->
+                <div class="service-card bg-gray-700 p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out border border-gray-600 animate-on-scroll"
+                    data-animation="fade-in" data-delay="0">
+                    <div class="text-5xl text-indigo-400 mb-6 text-center"><i class="fas fa-laptop-code"></i></div>
+                    <h3 class="text-2xl font-semibold text-gray-100 mb-3 text-center">Web Development</h3>
+                    <p class="text-gray-300 text-center">Building responsive, high-performance web applications and
+                        websites from scratch using modern frameworks and best practices.</p>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="service-card bg-gray-700 p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out border border-gray-600 animate-on-scroll"
+                    data-animation="fade-in" data-delay="150">
+                    <div class="text-5xl text-green-400 mb-6 text-center"><i class="fas fa-drafting-compass"></i></div>
+                    <h3 class="text-2xl font-semibold text-gray-100 mb-3 text-center">UI/UX Design</h3>
+                    <p class="text-gray-300 text-center">Crafting intuitive and engaging user interfaces with a focus on
+                        user experience, accessibility, and visual appeal.</p>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="service-card bg-gray-700 p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out border border-gray-600 animate-on-scroll"
+                    data-animation="fade-in" data-delay="300">
+                    <div class="text-5xl text-yellow-400 mb-6 text-center"><i class="fas fa-cogs"></i></div>
+                    <h3 class="text-2xl font-semibold text-gray-100 mb-3 text-center">API Development</h3>
+                    <p class="text-gray-300 text-center">Designing and implementing robust, scalable, and secure RESTful
+                        APIs to power your web and mobile applications.</p>
+                </div>
+                <!-- Service Card 4 -->
+                <div class="service-card bg-gray-700 p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out border border-gray-600 animate-on-scroll"
+                    data-animation="fade-in" data-delay="450">
+                    <div class="text-5xl text-red-400 mb-6 text-center"><i class="fas fa-database"></i></div>
+                    <h3 class="text-2xl font-semibold text-gray-100 mb-3 text-center">Database Solutions</h3>
+                    <p class="text-gray-300 text-center">Expertise in designing, optimizing, and managing databases
+                        (SQL/NoSQL) for efficient data storage and retrieval.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-900 section-bg-pattern-1">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="section-title text-center mx-auto animate-fade-in">My Skills</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+                <!-- Skill Card 1: Web Development -->
+                <div class="skill-card bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out border border-gray-600 animate-on-scroll"
+                    data-animation="fade-in">
+                    <div class="text-4xl text-indigo-400 mb-4 text-center"><i class="fab fa-html5"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2 text-center">Web Development</h3>
+                    <p class="text-gray-300 text-center text-sm mb-4">HTML5, CSS3, JavaScript (ES6+), React, Node.js,
+                        MongoDB</p>
+                    <div class="w-full bg-gray-600 rounded-full h-2.5 dark:bg-gray-700">
+                        <div class="bg-indigo-500 h-2.5 rounded-full skill-progress" data-progress="90"></div>
                     </div>
-                    <div class="form-group">
-                        <label for="email" class="form-label">Email *</label>
-                        <input type="email" id="email" name="email" class="form-input" required aria-required="true">
-                        <span class="form-error" id="email-error"></span>
+                    <p class="text-right text-gray-400 text-xs mt-1">90% Proficiency</p>
+                </div>
+                <!-- Skill Card 2: UI/UX Design -->
+                <div class="skill-card bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out border border-gray-600 animate-on-scroll"
+                    data-animation="fade-in" data-delay="100">
+                    <div class="text-4xl text-green-400 mb-4 text-center"><i class="fas fa-palette"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2 text-center">UI/UX Design</h3>
+                    <p class="text-gray-300 text-center text-sm mb-4">Figma, Adobe XD, User Research, Wireframing,
+                        Prototyping, Usability Testing, Responsive Design.</p>
+                    <div class="w-full bg-gray-600 rounded-full h-2.5 dark:bg-gray-700">
+                        <div class="bg-green-500 h-2.5 rounded-full skill-progress" data-progress="85"></div>
                     </div>
-                    <div class="form-group">
-                        <label for="subject" class="form-label">Subject</label>
-                        <input type="text" id="subject" name="subject" class="form-input">
+                    <p class="text-right text-gray-400 text-xs mt-1">85% Proficiency</p>
+                </div>
+                <!-- Skill Card 3: Database Management -->
+                <div class="skill-card bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out border border-gray-600 animate-on-scroll"
+                    data-animation="fade-in" data-delay="200">
+                    <div class="text-4xl text-red-400 mb-4 text-center"><i class="fas fa-database"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2 text-center">Database Management</h3>
+                    <p class="text-gray-300 text-center text-sm mb-4">SQL (MySQL), NoSQL (MongoDB, Firebase), Database
+                        Design, Query Optimization, Data Migration.</p>
+                    <div class="w-full bg-gray-600 rounded-full h-2.5 dark:bg-gray-700">
+                        <div class="bg-red-500 h-2.5 rounded-full skill-progress" data-progress="80"></div>
                     </div>
-                    <div class="form-group">
-                        <label for="message" class="form-label">Message *</label>
-                        <textarea id="message" name="message" class="form-textarea" rows="5" required
-                            aria-required="true"></textarea>
-                        <span class="form-error" id="message-error"></span>
+                    <p class="text-right text-gray-400 text-xs mt-1">80% Proficiency</p>
+                </div>
+                <!-- Skill Card 4: Cloud Platforms -->
+                <div class="skill-card bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out border border-gray-600 animate-on-scroll"
+                    data-animation="fade-in" data-delay="300">
+                    <div class="text-4xl text-yellow-400 mb-4 text-center"><i class="fas fa-cloud"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2 text-center">Cloud Platforms</h3>
+                    <p class="text-gray-300 text-center text-sm mb-4">Google Cloud Platform (GCP), Azure,
+                        Serverless Architectures.</p>
+                    <div class="w-full bg-gray-600 rounded-full h-2.5 dark:bg-gray-700">
+                        <div class="bg-yellow-500 h-2.5 rounded-full skill-progress" data-progress="75"></div>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-full">
-                        <span class="btn-text">Send Message</span>
-                        <span class="btn-loader"></span>
-                    </button>
+                    <p class="text-right text-gray-400 text-xs mt-1">75% Proficiency</p>
+                </div>
+                <!-- Skill Card 5: Version Control -->
+                <div class="skill-card bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out border border-gray-600 animate-on-scroll"
+                    data-animation="fade-in" data-delay="400">
+                    <div class="text-4xl text-purple-400 mb-4 text-center"><i class="fas fa-code-branch"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2 text-center">Version Control</h3>
+                    <p class="text-gray-300 text-center text-sm mb-4">Git, GitHub, GitLab, Branching Strategies, Pull
+                        Requests, Code Reviews.</p>
+                    <div class="w-full bg-gray-600 rounded-full h-2.5 dark:bg-gray-700">
+                        <div class="bg-purple-500 h-2.5 rounded-full skill-progress" data-progress="95"></div>
+                    </div>
+                    <p class="text-right text-gray-400 text-xs mt-1">95% Proficiency</p>
+                </div>
+                <!-- Skill Card 6: Data Analysis -->
+                <div class="skill-card bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out border border-gray-600 animate-on-scroll"
+                    data-animation="fade-in" data-delay="500">
+                    <div class="text-4xl text-teal-400 mb-4 text-center"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2 text-center">Data Analysis</h3>
+                    <p class="text-gray-300 text-center text-sm mb-4">Python (Pandas, NumPy), SQL, Data Visualization
+                        (Matplotlib),
+                        Statistical Analysis.</p>
+                    <div class="w-full bg-gray-600 rounded-full h-2.5 dark:bg-gray-700">
+                        <div class="bg-teal-500 h-2.5 rounded-full skill-progress" data-progress="70"></div>
+                    </div>
+                    <p class="text-right text-gray-400 text-xs mt-1">70% Proficiency</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-800 section-bg-pattern-2">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="section-title text-center mx-auto animate-fade-in">Experience</h2>
+            <div class="relative mt-10">
+                <!-- Vertical Line -->
+                <div
+                    class="absolute left-1/2 transform -translate-x-1/2 w-1 bg-indigo-600 h-full hidden md:block rounded-full">
+                </div>
+
+                <!-- Experience Item 1 -->
+                <div class="mb-12 flex flex-col md:flex-row items-center justify-between w-full animate-on-scroll"
+                    data-animation="slide-in-left">
+                    <div
+                        class="md:w-5/12 text-right p-4 md:order-1 order-2 bg-gray-700 rounded-lg shadow-md border border-gray-600">
+                        <h3 class="text-xl font-semibold text-gray-100">Name of the role</h3>
+                        <p class="text-indigo-400">Company Name</p>
+                        <p class="text-gray-400 text-sm">Duration</p>
+                        <ul class="list-disc list-inside text-gray-300 mt-2 text-left md:text-right">
+                            <li>Experience No.1</li>
+                            <li>Experience No.2</li>
+                            <li>Experience No.3</li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/12 flex justify-center md:order-2 order-1 mb-4 md:mb-0">
+                        <div
+                            class="w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center text-white shadow-md">
+                            <i class="fas fa-briefcase text-sm"></i>
+                        </div>
+                    </div>
+                    <div class="md:w-5/12 p-4 md:order-3 order-3 hidden md:block"></div>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="mb-12 flex flex-col md:flex-row items-center justify-between w-full animate-on-scroll"
+                    data-animation="slide-in-right">
+                    <div
+                        class="md:w-5/12 p-4 md:order-3 order-2 bg-gray-700 rounded-lg shadow-md border border-gray-600">
+                        <h3 class="text-xl font-semibold text-gray-100">Profession</h3>
+                        <p class="text-indigo-400">Role in the company or institution</p>
+                        <p class="text-gray-400 text-sm">Duration</p>
+                        <ul class="list-disc list-inside text-gray-300 mt-2 text-left">
+                            <li>Experience No.1</li>
+                            <li>Experience No.2</li>
+                            <li>Experience No.3</li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/12 flex justify-center md:order-2 order-1 mb-4 md:mb-0">
+                        <div
+                            class="w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center text-white shadow-md">
+                            <i class="fas fa-code text-sm"></i>
+                        </div>
+                    </div>
+                    <div class="md:w-5/12 p-4 md:order-1 order-3 hidden md:block"></div>
+                </div>
+
+                <!-- Experience Item 3 -->
+                <div class="mb-12 flex flex-col md:flex-row items-center justify-between w-full animate-on-scroll"
+                    data-animation="slide-in-left">
+                    <div
+                        class="md:w-5/12 text-right p-4 md:order-1 order-2 bg-gray-700 rounded-lg shadow-md border border-gray-600">
+                        <h3 class="text-xl font-semibold text-gray-100">Role in the sector</h3>
+                        <p class="text-indigo-400">......</p>
+                        <p class="text-gray-400 text-sm">Duration</p>
+                        <ul class="list-disc list-inside text-gray-300 mt-2 text-left md:text-right">
+                            <li>Experience No.1</li>
+                            <li>Experience No.2</li>
+                            <li>Experience No.3</li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/12 flex justify-center md:order-2 order-1 mb-4 md:mb-0">
+                        <div
+                            class="w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center text-white shadow-md">
+                            <i class="fas fa-laptop-code text-sm"></i>
+                        </div>
+                    </div>
+                    <div class="md:w-5/12 p-4 md:order-3 order-3 hidden md:block"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-gray-900 section-bg-pattern-1">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="section-title text-center mx-auto animate-fade-in">Education</h2>
+            <div class="relative mt-10">
+                <!-- Vertical Line -->
+                <div
+                    class="absolute left-1/2 transform -translate-x-1/2 w-1 bg-green-600 h-full hidden md:block rounded-full">
+                </div>
+
+                <!-- Education Item 1 -->
+                <div class="mb-12 flex flex-col md:flex-row items-center justify-between w-full animate-on-scroll"
+                    data-animation="slide-in-left">
+                    <div
+                        class="md:w-5/12 text-right p-4 md:order-1 order-2 bg-gray-700 rounded-lg shadow-md border border-gray-600">
+                        <h3 class="text-xl font-semibold text-gray-100">Degree</h3>
+                        <p class="text-green-400">Name of the University</p>
+                        <p class="text-gray-400 text-sm">Period</p>
+                        <ul class="list-disc list-inside text-gray-300 mt-2 text-left md:text-right">
+                            <li>Research subjects/specialized subjects</li>
+                            <li>Thesis Name and Subject</li>
+                            <li>GPA: </li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/12 flex justify-center md:order-2 order-1 mb-4 md:mb-0">
+                        <div
+                            class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center text-white shadow-md">
+                            <i class="fas fa-graduation-cap text-sm"></i>
+                        </div>
+                    </div>
+                    <div class="md:w-5/12 p-4 md:order-3 order-3 hidden md:block"></div>
+                </div>
+
+                <!-- Education Item 2 -->
+                <div class="mb-12 flex flex-col md:flex-row items-center justify-between w-full animate-on-scroll"
+                    data-animation="slide-in-right">
+                    <div
+                        class="md:w-5/12 p-4 md:order-3 order-2 bg-gray-700 rounded-lg shadow-md border border-gray-600">
+                        <h3 class="text-xl font-semibold text-gray-100">Degree/Achievements
+                        </h3>
+                        <p class="text-green-400">University name</p>
+                        <p class="text-gray-400 text-sm">Session/Period</p>
+                        <ul class="list-disc list-inside text-gray-300 mt-2 text-left">
+                            <li>Subjects</li>
+                            <li>Wroking Project:</li>
+                            <li>Activities/Achievements</li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/12 flex justify-center md:order-2 order-1 mb-4 md:mb-0">
+                        <div
+                            class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center text-white shadow-md">
+                            <i class="fas fa-university text-sm"></i>
+                        </div>
+                    </div>
+                    <div class="md:w-5/12 p-4 md:order-1 order-3 hidden md:block"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-20 bg-gray-800 section-bg-pattern-2">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="section-title text-center mx-auto animate-fade-in">Certifications</h2>
+            <p class="text-center text-gray-300 text-xl mb-12 animate-fade-in" data-delay="100">My professional
+                certifications and achievements.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+                <!-- Certification Card 1 -->
+                <div class="certification-card bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out border border-gray-600 animate-on-scroll"
+                    data-animation="fade-in">
+                    <div class="text-4xl text-yellow-400 mb-4 text-center"><i class="fas fa-award"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2 text-center">AWS Certified Developer - Associate
+                    </h3>
+                    <p class="text-gray-300 text-center">Issued by Amazon Web Services</p>
+                    <p class="text-gray-400 text-sm text-center">Issued: March 2023</p>
+                </div>
+                <!-- Certification Card 2 -->
+                <div class="certification-card bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out border border-gray-600 animate-on-scroll"
+                    data-animation="fade-in" data-delay="100">
+                    <div class="text-4xl text-blue-400 mb-4 text-center"><i class="fas fa-certificate"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2 text-center">Google Cloud Professional Cloud
+                        Architect</h3>
+                    <p class="text-gray-300 text-center">Issued by Google Cloud</p>
+                    <p class="text-gray-400 text-sm text-center">Issued: November 2022</p>
+                </div>
+                <!-- Certification Card 3 -->
+                <div class="certification-card bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out border border-gray-600 animate-on-scroll"
+                    data-animation="fade-in" data-delay="200">
+                    <div class="text-4xl text-green-400 mb-4 text-center"><i class="fas fa-check-circle"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2 text-center">Certified ScrumMaster (CSM)</h3>
+                    <p class="text-gray-300 text-center">Issued by Scrum Alliance</p>
+                    <p class="text-gray-400 text-sm text-center">Issued: July 2021</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog/Articles Section -->
+    <section id="blog" class="py-20 bg-gray-900 section-bg-pattern-1">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="section-title text-center mx-auto animate-fade-in">Latest Articles & Insights</h2>
+            <p class="text-center text-gray-300 text-xl mb-12 animate-fade-in" data-delay="100">Thoughts, tutorials, and
+                explorations in the world of technology.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
+                <!-- Article Card 1 -->
+                <div class="article-card bg-gray-700 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out overflow-hidden border border-gray-600 animate-on-scroll"
+                    data-animation="fade-in">
+                    <div class="skeleton-loader article-image-placeholder"></div>
+                    <img src="https://cdn.prod.website-files.com/5ff66329429d880392f6cba2/620e342e310444a1f20d52d7_Serverless%20Computing%20Preview.jpg"
+                        alt="Article Thumbnail" class="w-full h-48 object-cover hidden"
+                        onload="this.classList.remove('hidden'); this.previousElementSibling.style.display='none';">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-100 mb-2">The Future of Serverless Computing</h3>
+                        <p class="text-gray-300 mb-4 text-sm">Explore the evolving landscape of serverless architectures
+                            and their impact on modern web development.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400 text-xs">May 15, 2025</span>
+                            <a href="#"
+                                class="text-indigo-400 hover:text-indigo-300 font-medium flex items-center transition duration-300 ease-in-out"
+                                target="_blank">
+                                Read More <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Article Card 2 -->
+                <div class="article-card bg-gray-700 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out overflow-hidden border border-gray-600 animate-on-scroll"
+                    data-animation="fade-in" data-delay="100">
+                    <div class="skeleton-loader article-image-placeholder"></div>
+                    <img src="https://studio.uxpincdn.com/studio/wp-content/uploads/2024/07/React-Hooks-1024x512.webp"
+                        alt="Article Thumbnail" class="w-full h-48 object-cover hidden"
+                        onload="this.classList.remove('hidden'); this.previousElementSibling.style.display='none';">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-100 mb-2">Mastering React Hooks: A Deep Dive</h3>
+                        <p class="text-gray-300 mb-4 text-sm">Unlock the full potential of React Hooks to write cleaner,
+                            more efficient components.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400 text-xs">April 28, 2025</span>
+                            <a href="#"
+                                class="text-indigo-400 hover:text-indigo-300 font-medium flex items-center transition duration-300 ease-in-out"
+                                target="_blank">
+                                Read More <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Article Card 3 -->
+                <div class="article-card bg-gray-700 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out overflow-hidden border border-gray-600 animate-on-scroll"
+                    data-animation="fade-in" data-delay="200">
+                    <div class="skeleton-loader article-image-placeholder"></div>
+                    <img src="https://public-images.interaction-design.org/tags/td-prototyping-03.webp"
+                        alt="Article Thumbnail" class="w-full h-48 object-cover hidden"
+                        onload="this.classList.remove('hidden'); this.previousElementSibling.style.display='none';">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-100 mb-2">Effective Strategies for UI/UX Prototyping
+                        </h3>
+                        <p class="text-gray-300 mb-4 text-sm">Learn best practices for rapid prototyping and user
+                            testing in UI/UX design workflows.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400 text-xs">March 10, 2025</span>
+                            <a href="#"
+                                class="text-indigo-400 hover:text-indigo-300 font-medium flex items-center transition duration-300 ease-in-out"
+                                target="_blank">
+                                Read More <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12 animate-on-scroll" data-animation="fade-in" data-delay="300">
+                <a href="#"
+                    class="inline-block bg-indigo-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-700 transform hover:scale-105 transition duration-300 ease-in-out text-lg">
+                    View All Articles <i class="fas fa-book-open ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- New: Notes & Snippets Section -->
+    <section id="notes" class="py-20 bg-gray-800 section-bg-pattern-2">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="section-title text-center mx-auto animate-fade-in">Notes & Snippets</h2>
+            <p class="text-center text-gray-300 text-xl mb-12 animate-fade-in" data-delay="100">Quick thoughts, code
+                snippets, and interesting finds.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
+                <!-- Note Card 1 -->
+                <div class="note-card bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out border border-gray-600 animate-on-scroll"
+                    data-animation="fade-in">
+                    <h3 class="text-xl font-semibold text-gray-100 mb-3">CSS Grid vs. Flexbox: A Quick Guide</h3>
+                    <p class="text-gray-300 text-sm mb-4">A brief comparison of CSS Grid and Flexbox for layout, when to
+                        use each, and common use cases.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-600 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">CSS</span>
+                        <span
+                            class="bg-pink-600 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Layout</span>
+                    </div>
+                    <span class="text-gray-400 text-xs">June 1, 2025</span>
+                </div>
+                <!-- Note Card 2 -->
+                <div class="note-card bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out border border-gray-600 animate-on-scroll"
+                    data-animation="fade-in" data-delay="100">
+                    <h3 class="text-xl font-semibold text-gray-100 mb-3">JavaScript Debounce Function Example</h3>
+                    <p class="text-gray-300 text-sm mb-4">A reusable JavaScript debounce function to limit how often a
+                        function can run.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span
+                            class="bg-yellow-600 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">JavaScript</span>
+                        <span
+                            class="bg-purple-600 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Performance</span>
+                    </div>
+                    <span class="text-gray-400 text-xs">May 20, 2025</span>
+                </div>
+                <!-- Note Card 3 -->
+                <div class="note-card bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out border border-gray-600 animate-on-scroll"
+                    data-animation="fade-in" data-delay="200">
+                    <h3 class="text-xl font-semibold text-gray-100 mb-3">My Favorite VS Code Extensions for Web Dev</h3>
+                    <p class="text-gray-300 text-sm mb-4">A quick list of essential VS Code extensions that boost my web
+                        development productivity.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-red-600 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Tools</span>
+                        <span
+                            class="bg-green-600 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Productivity</span>
+                    </div>
+                    <span class="text-gray-400 text-xs">April 10, 2025</span>
+                </div>
+            </div>
+            <div class="text-center mt-12 animate-on-scroll" data-animation="fade-in" data-delay="300">
+                <a href="#"
+                    class="inline-block bg-indigo-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-700 transform hover:scale-105 transition duration-300 ease-in-out text-lg">
+                    View All Notes <i class="fas fa-lightbulb ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-800 section-bg-pattern-2">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="section-title text-center mx-auto animate-fade-in">My Projects</h2>
+            <!-- New: Project Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mt-8 mb-10 animate-fade-in" data-delay="100">
+                <button
+                    class="filter-btn bg-indigo-600 text-white px-5 py-2 rounded-full font-medium hover:bg-indigo-700 transition duration-300 ease-in-out active-filter"
+                    data-filter="all">All</button>
+                <button
+                    class="filter-btn bg-gray-700 text-gray-300 px-5 py-2 rounded-full font-medium hover:bg-gray-600 transition duration-300 ease-in-out"
+                    data-filter="React">React</button>
+                <button
+                    class="filter-btn bg-gray-700 text-gray-300 px-5 py-2 rounded-full font-medium hover:bg-gray-600 transition duration-300 ease-in-out"
+                    data-filter="Node.js">Node.js</button>
+                <button
+                    class="filter-btn bg-gray-700 text-gray-300 px-5 py-2 rounded-full font-medium hover:bg-gray-600 transition duration-300 ease-in-out"
+                    data-filter="UI/UX">UI/UX</button>
+                <button
+                    class="filter-btn bg-gray-700 text-gray-300 px-5 py-2 rounded-full font-medium hover:bg-gray-600 transition duration-300 ease-in-out"
+                    data-filter="Firebase">Firebase</button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
+                <!-- Project Card 1 -->
+                <div class="project-card bg-gray-700 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out overflow-hidden border border-gray-600 animate-on-scroll"
+                    data-animation="fade-in" data-project-id="project1" data-tech="React Node.js MongoDB">
+                    <div class="skeleton-loader project-image-placeholder"></div>
+                    <img src="https://placehold.co/600x400/3b82f6/ffffff?text=E-commerce+Platform"
+                        alt="E-commerce Platform" class="w-full h-48 object-cover hidden"
+                        onload="this.classList.remove('hidden'); this.previousElementSibling.style.display='none';">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-100 mb-2">E-commerce Platform</h3>
+                        <p class="text-gray-300 mb-4">A full-stack e-commerce application built with React, Node.js, and
+                            MongoDB, featuring user authentication, product management, and payment integration.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-indigo-600 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">React</span>
+                            <span
+                                class="bg-green-600 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Node.js</span>
+                            <span
+                                class="bg-red-600 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">MongoDB</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#"
+                                class="text-indigo-400 hover:text-indigo-300 font-medium flex items-center transition duration-300 ease-in-out"
+                                target="_blank">
+                                Live Demo <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                            </a>
+                            <a href="#"
+                                class="text-gray-400 hover:text-gray-300 flex items-center transition duration-300 ease-in-out"
+                                target="_blank">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card bg-gray-700 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out overflow-hidden border border-gray-600 animate-on-scroll"
+                    data-animation="fade-in" data-delay="100" data-project-id="project2" data-tech="Vue.js Firebase">
+                    <div class="skeleton-loader project-image-placeholder"></div>
+                    <img src="https://placehold.co/600x400/6366f1/ffffff?text=Task+Manager+App"
+                        alt="Task Management App" class="w-full h-48 object-cover hidden"
+                        onload="this.classList.remove('hidden'); this.previousElementSibling.style.display='none';">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-100 mb-2">Task Management App</h3>
+                        <p class="text-gray-300 mb-4">A responsive task management application with drag-and-drop
+                            functionality, real-time updates, and user collaboration features.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-purple-600 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Vue.js</span>
+                            <span
+                                class="bg-yellow-600 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Firebase</span>
+                            <span class="bg-blue-600 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Drag &
+                                Drop API</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#"
+                                class="text-indigo-400 hover:text-indigo-300 font-medium flex items-center transition duration-300 ease-in-out"
+                                target="_blank">
+                                Live Demo <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                            </a>
+                            <a href="#"
+                                class="text-gray-400 hover:text-gray-300 flex items-center transition duration-300 ease-in-out"
+                                target="_blank">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card bg-gray-700 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out overflow-hidden border border-gray-600 animate-on-scroll"
+                    data-animation="fade-in" data-delay="200" data-project-id="project3"
+                    data-tech="D3.js React Data Viz">
+                    <div class="skeleton-loader project-image-placeholder"></div>
+                    <img src="https://placehold.co/600x400/f59e0b/ffffff?text=Data+Dashboard"
+                        alt="Interactive Data Dashboard" class="w-full h-48 object-cover hidden"
+                        onload="this.classList.remove('hidden'); this.previousElementSibling.style.display='none';">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-100 mb-2">Interactive Data Dashboard</h3>
+                        <p class="text-gray-300 mb-4">A dynamic dashboard visualizing complex datasets using D3.js and
+                            React, with interactive charts and filters.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-pink-600 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">D3.js</span>
+                            <span
+                                class="bg-indigo-600 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">React</span>
+                            <span class="bg-teal-600 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Data
+                                Viz</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#"
+                                class="text-indigo-400 hover:text-indigo-300 font-medium flex items-center transition duration-300 ease-in-out"
+                                target="_blank">
+                                Live Demo <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                            </a>
+                            <a href="#"
+                                class="text-gray-400 hover:text-gray-300 flex items-center transition duration-300 ease-in-out"
+                                target="_blank">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="project-card bg-gray-700 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out overflow-hidden border border-gray-600 animate-on-scroll"
+                    data-animation="fade-in" data-delay="300" data-project-id="project4" data-tech="UI/UX Figma">
+                    <div class="skeleton-loader project-image-placeholder"></div>
+                    <img src="https://placehold.co/600x400/475569/ffffff?text=Mobile+App+Concept"
+                        alt="Mobile App Concept" class="w-full h-48 object-cover hidden"
+                        onload="this.classList.remove('hidden'); this.previousElementSibling.style.display='none';">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-100 mb-2">Mobile App Concept</h3>
+                        <p class="text-gray-300 mb-4">UI/UX design and prototype for a fitness tracking mobile
+                            application, focusing on user-centric design principles.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-gray-600 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Figma</span>
+                            <span
+                                class="bg-indigo-600 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">UI/UX</span>
+                            <span
+                                class="bg-green-600 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Prototyping</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#"
+                                class="text-indigo-400 hover:text-indigo-300 font-medium flex items-center transition duration-300 ease-in-out"
+                                target="_blank">
+                                View Case Study <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                            </a>
+                            <a href="#"
+                                class="text-gray-400 hover:text-gray-300 flex items-center transition duration-300 ease-in-out"
+                                target="_blank">
+                                <i class="fab fa-behance text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 5 -->
+                <div class="project-card bg-gray-700 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out overflow-hidden border border-gray-600 animate-on-scroll"
+                    data-animation="fade-in" data-delay="400" data-project-id="project5"
+                    data-tech="Next.js GraphQL CMS">
+                    <div class="skeleton-loader project-image-placeholder"></div>
+                    <img src="https://placehold.co/600x400/6b7280/ffffff?text=Blog+Platform"
+                        alt="Personal Blog Platform" class="w-full h-48 object-cover hidden"
+                        onload="this.classList.remove('hidden'); this.previousElementSibling.style.display='none';">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-100 mb-2">Personal Blog Platform</h3>
+                        <p class="text-gray-300 mb-4">A custom-built blog platform with a content management system
+                            (CMS), markdown support, and SEO optimization.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-red-600 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Next.js</span>
+                            <span
+                                class="bg-indigo-600 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">GraphQL</span>
+                            <span
+                                class="bg-green-600 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">CMS</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#"
+                                class="text-indigo-400 hover:text-indigo-300 font-medium flex items-center transition duration-300 ease-in-out"
+                                target="_blank">
+                                Live Demo <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                            </a>
+                            <a href="#"
+                                class="text-gray-400 hover:text-gray-300 flex items-center transition duration-300 ease-in-out"
+                                target="_blank">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 6 -->
+                <div class="project-card bg-gray-700 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out overflow-hidden border border-gray-600 animate-on-scroll"
+                    data-animation="fade-in" data-delay="500" data-project-id="project6"
+                    data-tech="JavaScript HTML Canvas">
+                    <div class="skeleton-loader project-image-placeholder"></div>
+                    <img src="https://placehold.co/600x400/374151/ffffff?text=Game+Dev" alt="Simple Game Development"
+                        class="w-full h-48 object-cover hidden"
+                        onload="this.classList.remove('hidden'); this.previousElementSibling.style.display='none';">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-100 mb-2"> Game Development</h3>
+                        <p class="text-gray-300 mb-4">An browser-based game developed using pure JavaScript and
+                            HTML Canvas, demonstrating basic game mechanics.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-yellow-600 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">JavaScript</span>
+                            <span class="bg-purple-600 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">HTML
+                                Canvas</span>
+                            <span class="bg-red-600 text-white text-xs font-medium px-2.5 py-0.5 rounded-full">Game
+                                Dev</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#"
+                                class="text-indigo-400 hover:text-indigo-300 font-medium flex items-center transition duration-300 ease-in-out"
+                                target="_blank">
+                                Play Game <i class="fas fa-gamepad ml-2 text-sm"></i>
+                            </a>
+                            <a href="#"
+                                class="text-gray-400 hover:text-gray-300 flex items-center transition duration-300 ease-in-out"
+                                target="_blank">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- New LLM Feature Button -->
+            <div class="text-center mt-12 animate-on-scroll" data-animation="fade-in" data-delay="600">
+                <button id="open-llm-input-modal-button"
+                    class="inline-flex items-center bg-yellow-400 text-gray-900 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-yellow-300 transform hover:scale-105 transition duration-300 ease-in-out text-lg">
+                    ✨ Generate Project Brief
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- New: 3D Showcase Section -->
+    <section id="3d-showcase" class="py-20 bg-gray-950 section-bg-pattern-1">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="section-title text-center mx-auto animate-fade-in">3D Skills Showcase</h2>
+            <p class="text-center text-gray-300 text-xl mb-12 animate-fade-in" data-delay="100">Explore my technical
+                concepts in an interactive 3D environment.</p>
+            <div
+                class="flex justify-center items-center w-full h-[600px] bg-gray-800 rounded-xl shadow-2xl border border-gray-700 overflow-hidden">
+                <canvas id="three-js-canvas" class="w-full h-full block"></canvas>
+            </div>
+            <p class="text-center text-gray-400 text-sm mt-4 animate-fade-in" data-delay="200">Drag your mouse to rotate
+                the view!</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-900 section-bg-pattern-1">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="section-title text-center mx-auto animate-fade-in">What People Say</h2>
+            <div class="relative mt-10">
+                <div id="testimonials-carousel"
+                    class="flex overflow-hidden rounded-xl shadow-lg border border-gray-600">
+                    <!-- Testimonial Card 1 -->
+                    <div
+                        class="testimonial-card flex-shrink-0 w-full bg-gray-700 p-8 flex flex-col items-center text-center">
+                        <img src="https://placehold.co/80x80/4a5568/a0aec0?text=Client+1" alt="Client 1"
+                            class="w-20 h-20 rounded-full mb-4 border-2 border-indigo-400 object-cover">
+                        <p class="text-gray-300 italic mb-4">"CHINMOY is an exceptional developer. Their
+                            attention to detail and ability to deliver high-quality code on time is truly impressive.
+                            Highly
+                            recommend!"</p>
+                        <p class="font-semibold text-gray-100">- Jane Doe, CEO of Company A</p>
+                    </div>
+                    <!-- Testimonial Card 2 -->
+                    <div
+                        class="testimonial-card flex-shrink-0 w-full bg-gray-700 p-8 flex flex-col items-center text-center">
+                        <img src="https://placehold.co/80x80/2d3748/a0aec0?text=Client+2" alt="Client 2"
+                            class="w-20 h-20 rounded-full mb-4 border-2 border-indigo-400 object-cover">
+                        <p class="text-gray-300 italic mb-4">"Working with CHINMOY was a fantastic experience.
+                            They understood our vision perfectly and brought it to life with their expertise in design
+                            and
+                            development."</p>
+                        <p class="font-semibold text-gray-100">- John Smith, Marketing Director at Company B</p>
+                    </div>
+                    <!-- Add more testimonial cards here if needed -->
+                </div>
+                <!-- Carousel Navigation -->
+                <button id="testimonial-prev"
+                    class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-600 bg-opacity-75 text-white p-3 rounded-full shadow-lg hover:bg-opacity-100 transition duration-300 z-10">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button id="testimonial-next"
+                    class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-600 bg-opacity-75 text-white p-3 rounded-full shadow-lg hover:bg-opacity-100 transition duration-300 z-10">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <!-- Carousel Dots -->
+                <div id="testimonial-dots" class="flex justify-center mt-4 space-x-2">
+                    <span class="dot w-3 h-3 bg-gray-500 rounded-full cursor-pointer transition duration-300"></span>
+                    <span class="dot w-3 h-3 bg-gray-700 rounded-full cursor-pointer transition duration-300"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="cta" class="py-20 bg-indigo-700 text-white text-center">
+        <div class="container mx-auto px-6 max-w-4xl animate-fade-in">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">Ready to Start Your Project?</h2>
+            <p class="text-xl md:text-2xl font-light mb-10">Let's build something amazing together. Reach out and tell
+                me about your ideas!</p>
+            <a href="#contact"
+                class="inline-block bg-yellow-400 text-indigo-900 font-bold py-4 px-10 rounded-full shadow-lg hover:bg-yellow-300 transform hover:scale-105 transition duration-300 ease-in-out text-xl">
+                Contact Me Now <i class="fas fa-envelope ml-3"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-800 section-bg-pattern-2">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <h2 class="section-title text-center mx-auto animate-fade-in">Get In Touch</h2>
+            <div class="mt-10 bg-gray-700 p-8 rounded-xl shadow-lg border border-gray-600 animate-fade-in">
+                <p class="text-center text-gray-300 mb-8">Have a question or want to work together? Fill out the form
+                    below or reach out directly!</p>
+                <form id="contact-form" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Your Name</label>
+                        <input type="text" id="name" name="name"
+                            class="mt-1 block w-full px-4 py-2 bg-gray-600 border border-gray-500 rounded-md shadow-sm text-gray-100 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                            placeholder="Enter Your Name" required>
+                        <span id="name-error" class="text-red-400 text-sm mt-1 hidden"></span>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Your Email
+                            Address</label>
+                        <input type="email" id="email" name="email"
+                            class="mt-1 block w-full px-4 py-2 bg-gray-600 border border-gray-500 rounded-md shadow-sm text-gray-100 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                            placeholder="Enter Your Email Address" required>
+                        <span id="email-error" class="text-red-400 text-sm mt-1 hidden"></span>
+                    </div>
+                    <div>
+                        <label for="subject" class="block text-sm font-medium text-gray-300 mb-1">Subject</label>
+                        <input type="text" id="subject" name="subject"
+                            class="mt-1 block w-full px-4 py-2 bg-gray-600 border border-gray-500 rounded-md shadow-sm text-gray-100 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                            placeholder="Project Inquiry, Collaboration, etc." required>
+                        <span id="subject-error" class="text-red-400 text-sm mt-1 hidden"></span>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Message</label>
+                        <textarea id="message" name="message" rows="5"
+                            class="mt-1 block w-full px-4 py-2 bg-gray-600 border border-gray-500 rounded-md shadow-sm text-gray-100 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                            placeholder="Tell me about your project or message..." required></textarea>
+                        <span id="message-error" class="text-red-400 text-sm mt-1 hidden"></span>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit"
+                            class="inline-flex justify-center py-3 px-8 border border-transparent shadow-sm text-lg font-medium rounded-full text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transform hover:scale-105 transition duration-300 ease-in-out">
+                            Send Message <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </div>
                 </form>
-            </div>
-        </div>
-    </div>
-</section>
-</main>
-
-<!-- Footer -->
-<footer class="footer" role="contentinfo">
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-brand">
-                <h3>Chinmoy Kumar Biswas</h3>
-                <p>Building the future, one line of code at a time.</p>
-            </div>
-            <div class="footer-links">
-                <div class="link-group">
-                    <h4>Navigation</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="link-group">
-                    <h4>Connect</h4>
-                    <ul>
-                        <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
-                        <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>
-                        <li><a href="#" target="_blank" rel="noopener">Twitter</a></li>
-                        <li><a href="#" target="_blank" rel="noopener">Dev.to</a></li>
-                    </ul>
+                <div class="mt-10 text-center">
+                    <p class="text-gray-300 text-lg mb-4">Also find me on social media:</p>
+                    <div class="flex justify-center space-x-6">
+                        <a href="https://www.linkedin.com/in/chinmoy-kumar-biswas/"
+                            class="text-indigo-400 hover:text-indigo-300 text-3xl transition duration-300 ease-in-out transform hover:scale-110"
+                            aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Chinmoy2007"
+                            class="text-gray-400 hover:text-gray-300 text-3xl transition duration-300 ease-in-out transform hover:scale-110"
+                            aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://x.com/Chinmoy_SH_"
+                            class="text-blue-400 hover:text-blue-300 text-3xl transition duration-300 ease-in-out transform hover:scale-110"
+                            aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/chinmoy.kumar.biswas.8.18.9.4.9"
+                            class="text-blue-600 hover:text-blue-500 text-3xl transition duration-300 ease-in-out transform hover:scale-110"
+                            aria-label="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="mailto:bangladeshchinmoy@gmail.com"
+                            class="text-red-400 hover:text-red-300 text-3xl transition duration-300 ease-in-out transform hover:scale-110"
+                            aria-label="Email" target="_blank"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.instagram.com/itz_me_chinmoy_impaired/?hl=en"
+                            class="text-pink-500 hover:text-pink-400 text-3xl transition duration-300 ease-in-out transform hover:scale-110"
+                            aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; <span id="current-year">2025</span> Chinmoy Kumar Biswas. All rights reserved.</p>
-            <p>Made with ❤️ and ☕</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="mb-4">&copy; <span id="current-year"></span> CHINMOY KUMAR BISWAS. All rights reserved.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#about" class="text-gray-400 hover:text-white transition duration-300 ease-in-out">About</a>
+                <a href="#services"
+                    class="text-gray-400 hover:text-white transition duration-300 ease-in-out">Services</a>
+                <a href="#skills" class="text-gray-400 hover:text-white transition duration-300 ease-in-out">Skills</a>
+                <a href="#experience"
+                    class="text-gray-400 hover:text-white transition duration-300 ease-in-out">Experience</a>
+                <a href="#education"
+                    class="text-gray-400 hover:text-white transition duration-300 ease-in-out">Education</a>
+                <a href="#certifications"
+                    class="text-gray-400 hover:text-white transition duration-300 ease-in-out">Certifications</a>
+                <a href="#blog" class="text-gray-400 hover:text-white transition duration-300 ease-in-out">Blog</a>
+                <a href="#notes" class="text-gray-400 hover:text-white transition duration-300 ease-in-out">Notes</a>
+                <a href="#projects"
+                    class="text-gray-400 hover:text-white transition duration-300 ease-in-out">Projects</a>
+                <a href="#3d-showcase" class="text-gray-400 hover:text-white transition duration-300 ease-in-out">3D
+                    Showcase</a>
+                <a href="#testimonials"
+                    class="text-gray-400 hover:text-white transition duration-300 ease-in-out">Testimonials</a>
+                <a href="#contact"
+                    class="text-gray-400 hover:text-white transition duration-300 ease-in-out">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top"
+        class="fixed bottom-8 right-8 bg-indigo-600 text-white p-4 rounded-full shadow-lg hover:bg-indigo-700 transition-all duration-300 ease-in-out transform scale-0 opacity-0 z-40">
+        <i class="fas fa-arrow-up text-xl"></i>
+    </button>
+
+    <!-- Project Detail Modal -->
+    <div id="project-detail-modal" class="modal-overlay hidden">
+        <div class="modal-content w-full md:w-3/4 lg:w-2/3 xl:w-1/2">
+            <button id="close-modal-button"
+                class="absolute top-4 right-4 text-gray-400 hover:text-gray-100 text-3xl focus:outline-none">
+                <i class="fas fa-times-circle"></i>
+            </button>
+            <h3 id="modal-project-title" class="text-3xl font-bold text-indigo-400 mb-4"></h3>
+            <div class="skeleton-loader modal-image-placeholder"></div>
+            <img id="modal-project-image" src="" alt="Project Image"
+                class="w-full h-64 object-cover rounded-lg mb-6 hidden"
+                onload="this.classList.remove('hidden'); this.previousElementSibling.style.display='none';">
+            <p id="modal-project-description" class="text-gray-300 text-lg mb-6 leading-relaxed"></p>
+            <div id="modal-project-tech" class="flex flex-wrap gap-2 mb-6"></div>
+            <div class="flex flex-col sm:flex-row justify-center sm:justify-start gap-4">
+                <a id="modal-live-demo" href="#"
+                    class="inline-block bg-indigo-600 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-indigo-700 transform hover:scale-105 transition duration-300 ease-in-out text-center"
+                    target="_blank">
+                    Live Demo <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                </a>
+                <a id="modal-github" href="#"
+                    class="inline-block bg-gray-600 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-gray-700 transform hover:scale-105 transition duration-300 ease-in-out text-center"
+                    target="_blank">
+                    GitHub <i class="fab fa-github ml-2 text-sm"></i>
+                </a>
+            </div>
         </div>
     </div>
-</footer>
 
-<!-- Loading Screen -->
-<div class="loading-screen">
-    <div class="loading-content">
-        <div class="loading-logo">CKB</div>
-        <div class="loading-progress">
-            <div class="loading-bar"></div>
+    <!-- LLM Idea Input Modal -->
+    <div id="llm-input-modal" class="modal-overlay hidden">
+        <div class="modal-content w-full md:w-1/2 lg:w-1/3">
+            <button id="close-llm-input-modal-button"
+                class="absolute top-4 right-4 text-gray-400 hover:text-gray-100 text-3xl focus:outline-none">
+                <i class="fas fa-times-circle"></i>
+            </button>
+            <h3 class="text-3xl font-bold text-yellow-400 mb-4 text-center">Generate Project Brief</h3>
+            <p class="text-gray-300 text-lg mb-4 text-center">Enter a theme for your project idea:</p>
+            <input type="text" id="project-theme-input"
+                class="w-full px-4 py-2 bg-gray-600 border border-gray-500 rounded-md shadow-sm text-gray-100 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm mb-6"
+                placeholder="e.g., educational app, social media, game, data visualization">
+            <div class="text-center">
+                <button id="generate-brief-button"
+                    class="inline-flex justify-center py-2 px-6 border border-transparent shadow-sm text-md font-medium rounded-full text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transform hover:scale-105 transition duration-300 ease-in-out">
+                    Generate Brief <i class="fas fa-magic ml-2"></i>
+                </button>
+            </div>
         </div>
-        <div class="loading-text">Initializing...</div>
     </div>
-</div>
 
-<!-- Particles Background -->
-<div class="particles"></div>
+    <!-- LLM Idea Display Modal -->
+    <div id="llm-idea-display-modal" class="modal-overlay hidden">
+        <div class="modal-content w-full md:w-1/2 lg:w-2/3">
+            <button id="close-llm-display-modal-button"
+                class="absolute top-4 right-4 text-gray-400 hover:text-gray-100 text-3xl focus:outline-none">
+                <i class="fas fa-times-circle"></i>
+            </button>
+            <h3 class="text-3xl font-bold text-yellow-400 mb-4 text-center">✨ Your Project Brief ✨</h3>
+            <p id="llm-idea-content" class="text-gray-300 text-lg mb-6 leading-relaxed whitespace-pre-wrap">Generating
+                brief...</p>
+            <div class="text-center">
+                <button id="copy-idea-button"
+                    class="inline-flex justify-center py-2 px-6 border border-transparent shadow-sm text-md font-medium rounded-full text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transform hover:scale-105 transition duration-300 ease-in-out">
+                    Copy Brief <i class="fas fa-copy ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </div>
 
-<!-- Scroll Progress Indicator -->
-<div class="scroll-progress"></div>
-
-<!-- Custom Cursor -->
-<div class="cursor"></div>
-<div class="cursor-follower"></div>
-
-<!-- Scripts -->
-<script src="./assets/js/performance.js"></script>
-<script src="./assets/js/data-loader.js"></script>
-<script src="./assets/js/main.js"></script>
+    <!-- Link to your external JavaScript file -->
+    <script src="script.js"></script>
 </body>
 
 </html>
