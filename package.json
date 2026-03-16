@@ -20,6 +20,6 @@
         "prettier": "^3.6.2",
         "serve": "^14.2.4",
         "stylelint": "^16.16.0",
-        "stylelint-config-standard": "^38.0.0"
+        "stylelint-config-standard": "^40.0.0"
     }
 }
